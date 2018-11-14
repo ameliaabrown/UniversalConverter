@@ -1,4 +1,7 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
 public class UniversalConverterRunner
@@ -6,12 +9,15 @@ public class UniversalConverterRunner
 
 		public static void main(String[] args)
 			{
+			displayJFrame();
+				//WASSUUUUUUPPPP MY BROSKIIIIIIIIII
+			}
+		public static void displayJFrame()
+		{
 			JFrame frame = new JFrame("Universal Converter v.1");
-			
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setSize(300, 150);
 			frame.setLocation(430, 100);
-//			frame.setLayout(null);
 			
 			JPanel panel = new JPanel();
 			panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
@@ -29,7 +35,6 @@ public class UniversalConverterRunner
 			cb.setMaximumSize(cb.getPreferredSize()); 
 			cb.setAlignmentX(Component.CENTER_ALIGNMENT);
 			
-//			cb.setVisible(true);
 			panel.add(cb);
 			
 			JButton btn = new JButton("OK");
@@ -38,24 +43,24 @@ public class UniversalConverterRunner
 			
 			frame.setVisible(true);
 			
-			switch(cb.getSelectedIndex())
-			{
-			case 0:
-				convertTemp(12);
-				break;
-				
-				default:
-					break;
-			}
-			
-			
-				//WASSUUUUUUPPPP MY BROSKIIIIIIIIII
-			}
-		
-		public static int convertTemp(int n)
+			btn.addActionListener(new ActionListener()
+				{
+					public void actionPerformed(ActionEvent e)
+					{
+						switch(cb.getSelectedIndex())
+						{
+							case 0:
+								convertTemp();
+								break;
+							case 1:
+								System.out.println("yo");
+						}
+					}
+				});
+		}
+		public static void convertTemp()
 		{
 			System.out.println("test");
-			return n;
 		}
 
 	}
