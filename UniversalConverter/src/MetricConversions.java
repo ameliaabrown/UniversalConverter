@@ -77,7 +77,10 @@ public class MetricConversions {
 		{
 			convertedNumber = number / 12;
 		}
-
+		
+		
+		System.out.println(number + convertFrom + "is equal to" + convertedNumber + convertTo);
+		
 	}
 
 }
