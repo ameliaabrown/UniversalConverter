@@ -30,52 +30,52 @@ public class MetricConversions {
 
 		if (convertFrom.equals("inches") && convertTo.equals("miles"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("feet") && convertTo.equals("inches"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("feet") && convertTo.equals("yards"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("feet") && convertTo.equals("miles"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("yards") && convertTo.equals("inches"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("yards") && convertTo.equals("feet"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("yards") && convertTo.equals("miles"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("miles") && convertTo.equals("inches"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("miles") && convertTo.equals("feet"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 
 		if (convertFrom.equals("miles") && convertTo.equals("yards"))
 		{
-			convertedNumber = number / 12;
+			convertedNumber = number / 1;
 		}
 		
 		
