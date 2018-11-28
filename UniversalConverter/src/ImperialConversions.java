@@ -36,7 +36,7 @@ public class ImperialConversions {
  		
 			public static void inches() 
 			{
-				System.out.println("What unit are you converting to? (1. feet, 2. yards or 3. miles)");
+				System.out.println("What unit are you converting to? (1. feet 2. yards 3. miles)");
 				Scanner userWant = new Scanner(System.in);
 				int convertTo = userWant.nextInt();
 				
@@ -64,7 +64,7 @@ public class ImperialConversions {
 			
 			private static void feet() 
 			{
-				System.out.println("What unit are you converting to? (1. inches, 2. yards 3. miles)");
+				System.out.println("What unit are you converting to? (1. inches 2. yards 3. miles)");
 				Scanner userWant = new Scanner(System.in);
 				int convertTo = userWant.nextInt();
 				
@@ -92,7 +92,7 @@ public class ImperialConversions {
 			
 			private static void yards() 
 			{
-				System.out.println("What unit are you converting to? (1. inches, 2. feet 3. miles)");
+				System.out.println("What unit are you converting to? (1. inches 2. feet 3. miles)");
 				Scanner userWant = new Scanner(System.in);
 				int convertTo = userWant.nextInt();
 				
@@ -119,7 +119,7 @@ public class ImperialConversions {
 		
 			private static void miles()
 			{
-				System.out.println("What unit are you converting to? (1. inches, 2. feet 3. yards)");
+				System.out.println("What unit are you converting to? (1. inches 2. feet 3. yards)");
 				Scanner userWant = new Scanner(System.in);
 				int convertTo = userWant.nextInt();
 				
