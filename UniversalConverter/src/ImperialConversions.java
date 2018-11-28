@@ -86,6 +86,7 @@ public class ImperialConversions {
 					//feet to miles
 					finalNumber = number / 5280;
 					break;
+				
 				}
 			}
 			
