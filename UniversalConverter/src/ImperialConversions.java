@@ -11,7 +11,7 @@ public class ImperialConversions {
  		public static void imperialConversion()
 		{
 			
-			System.out.println("What unit are you converting from? (1. inches, 2. feet, 3. yards or 4. miles)");
+			System.out.println("What unit are you converting from? (1. inches 2. feet 3. yards 4. miles)");
 			Scanner userSystem = new Scanner(System.in);
 			int convertFrom = userSystem.nextInt();
 			
