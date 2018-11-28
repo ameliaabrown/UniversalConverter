@@ -47,7 +47,7 @@ public class MetricConversions {
 	public static void kilo()
 	{
 		
-		System.out.println("What unit are you converting to? (1. Hecto 3. Deka 4. Base 5. Deci 6. Centi 8. Mili)");
+		System.out.println("What unit are you converting to? (1. Hecto 2. Deka 3. Base 4. Deci 5. Centi 6. Mili)");
 		Scanner userWant = new Scanner(System.in);
 		int convertTo = userWant.nextInt();
 		
@@ -55,8 +55,8 @@ public class MetricConversions {
 		Scanner userNumber = new Scanner (System.in);
 		int number = userNumber.nextInt();
 		
-		int toBase = 0;
-		toBase = number / 1000;
+		int toBase;
+		toBase = number * 1000;
 		
 		switch (convertTo)
 		{
@@ -86,7 +86,7 @@ public class MetricConversions {
 	
 	public static void hecto()
 	{
-		System.out.println("What unit are you converting to? (1. Kilo 3. Deka 4. Base 5. Deci 6. Centi 8. Mili)");
+		System.out.println("What unit are you converting to? (1. Kilo 2. Deka 3. Base 4. Deci 5. Centi 6. Mili)");
 		Scanner userWant = new Scanner(System.in);
 		int convertTo = userWant.nextInt();
 		
@@ -95,7 +95,7 @@ public class MetricConversions {
 		int number = userNumber.nextInt();
 		
 		int toBase = 0;
-		toBase = number / 100;
+		toBase = number * 100;
 		
 		switch (convertTo)
 		{
@@ -134,7 +134,7 @@ public class MetricConversions {
 		int number = userNumber.nextInt();
 		
 		int toBase = 0;
-		toBase = number / 10;
+		toBase = number * 10;
 		
 		switch (convertTo)
 		{
@@ -164,7 +164,7 @@ public class MetricConversions {
 	
 	public static void base ()
 	{
-		System.out.println("What unit are you converting to? (1. Kilo 3. Hecto 4. Deka 5. Deci 6. Centi 8. Mili)");
+		System.out.println("What unit are you converting to? (1. Kilo 2. Hecto 3. Deka 4. Deci 5. Centi 6. Mili)");
 		Scanner userWant = new Scanner(System.in);
 		int convertTo = userWant.nextInt();
 		
@@ -202,17 +202,119 @@ public class MetricConversions {
 	
 	public static void deci()
 	{
+		System.out.println("What unit are you converting to? (1. Kilo 2. Hecto 3. Deka 4. Base 5. Centi 6. Mili)");
+		Scanner userWant = new Scanner(System.in);
+		int convertTo = userWant.nextInt();
 		
+		System.out.println("Please enter the number you want to convert");
+		Scanner userNumber = new Scanner (System.in);
+		int number = userNumber.nextInt();
+		
+		int toBase = 0;
+		toBase = number / 10;
+		
+		switch (convertTo)
+		{
+		case 1:
+			//base to kilo
+			endNumber = toBase / 1000; 
+			break;
+		case 2:
+			//base to hecto
+			endNumber = toBase / 100;
+			break;
+		case 3:
+			//base to base
+			endNumber = toBase;
+			break;
+		case 4:
+			//base to deka
+			endNumber = toBase / 10;
+		case 5:
+			//base to centi
+			endNumber = toBase * 100 ;
+		case 6:
+			//base to mili
+			endNumber = toBase * 1000 ;
+		}
 	}
 	
 	public static void centi()
 	{
+		System.out.println("What unit are you converting to? (1. Kilo 2. Hecto 3. Deka 4. Base 5. Deci 6. Mili)");
+		Scanner userWant = new Scanner(System.in);
+		int convertTo = userWant.nextInt();
 		
+		System.out.println("Please enter the number you want to convert");
+		Scanner userNumber = new Scanner (System.in);
+		int number = userNumber.nextInt();
+		
+		int toBase = 0;
+		toBase = number * 10;
+		
+		switch (convertTo)
+		{
+		case 1:
+			//base to kilo
+			endNumber = toBase / 1000; 
+			break;
+		case 2:
+			//base to hecto
+			endNumber = toBase / 100;
+			break;
+		case 3:
+			//base to deka
+			endNumber = toBase * 10;
+			break;
+		case 4:
+			//base to base
+			endNumber = toBase;
+		case 5:
+			//base to deci
+			endNumber = toBase * 10;
+		case 6:
+			//base to mili
+			endNumber = toBase * 1000 ;
+		}
 	}
 	
 	public static void mili()
 	{
+		System.out.println("What unit are you converting to? (1. Kilo 2. Hecto 3. Deka 4. Base 5. Deci 6. Mili)");
+		Scanner userWant = new Scanner(System.in);
+		int convertTo = userWant.nextInt();
 		
+		System.out.println("Please enter the number you want to convert");
+		Scanner userNumber = new Scanner (System.in);
+		int number = userNumber.nextInt();
+		
+		int toBase = 0;
+		toBase = number * 100;
+		
+		switch (convertTo)
+		{
+		case 1:
+			//base to kilo
+			endNumber = toBase / 1000; 
+			break;
+		case 2:
+			//base to hecto
+			endNumber = toBase / 100;
+			break;
+		case 3:
+			//base to deka
+			endNumber = toBase * 10;
+			break;
+		case 4:
+			//base to base
+			endNumber = toBase;
+		case 5:
+			//base to deci
+			endNumber = toBase * 10;
+		case 6:
+			//base to centi
+			endNumber = toBase * 100 ;
+		}
 	}
 	
 	
